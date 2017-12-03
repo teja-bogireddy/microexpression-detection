@@ -210,11 +210,7 @@ model.add(Activation('softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='RMSprop',metrics=['accuracy'])
 print "Model Is Created"
 
-#X_train_new, X_val_new, y_train_new, y_val_new =  train_test_split(train_set, Y_train, test_size=0.2, random_state=42)
-#print "Data Is Split"
-
 hist = model.fit(train_set, Y_train, validation_data=(train1_set,Y1_train),batch_size=batch_size,epochs = nb_epoch, verbose=1)
-
 
 print "Predicting"
 out2 = model.predict(train_set)
