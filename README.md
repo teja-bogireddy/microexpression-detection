@@ -1,2 +1,1 @@
-# microexpression-detection
-Micro-Facial Expression Detection using 3D Convolutional Neural Networks
+FERA17 for training the network and CASME2 for testing the network
